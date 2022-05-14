@@ -1,0 +1,94 @@
+body{
+    background-color: #000000;
+    background-image:url(/ımages/cinema-3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    color: rgb(166, 166, 166);
+    margin-top: 35px;
+
+}
+
+.seat {
+    background-color: #646469;
+    height: 40px;
+    width: 40px;
+    margin: 7px;
+    border-radius: 5px;
+
+}
+.seat.selected {
+    background-color: #b41818;
+}
+
+.seat.reserved {
+    background-color: rgb(233, 248, 235);
+}
+.seat:not(.reserved):hover {
+    cursor: pointer;
+    transform:scale(1.5);
+
+}
+.seat:nth-of-type(2) {
+    margin-right: 40px;
+
+}
+
+.seat:nth-last-of-type(3) {
+    margin-right: 40px;
+}
+
+.row {
+    display: flex;
+}
+.screen {
+    font-family: cursive;
+    font-size: large;
+    color: #010202;
+    text-align: center;
+    padding-top: 3rem;
+    background-color: #b41818;
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    margin-top: 2.5rem;
+    box-shadow: 5px rgba(255, 255, 256, 0.7);
+
+}
+.movie-list{
+    margin: 20px 0;
+   
+}
+.info{
+    background-color: rgb(45, 35, 52);
+    padding: 5px 10px;
+    color: rgb(255, 250, 250);
+    display: flex;
+    border-radius: 15px;
+}
+.info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10 10px;
+}
+p{
+    background-color: rgb(45, 35, 52);
+    width: 25%;
+    height: 20%;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(235, 238, 228);
+
+}
+p.text span {
+    
+    color: #d8c70a;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
